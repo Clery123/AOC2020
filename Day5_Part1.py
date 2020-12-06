@@ -26,10 +26,6 @@ def seat():
         lst.append(start*8+startL)
     lst.sort()
     print(lst[-1])
-    print(find_missing(lst))
-    
-def find_missing(lst):
-    return [x for x in range(lst[0], lst[-1]+1)  
-                            if x not in lst]   
+
 seat()
           
